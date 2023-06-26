@@ -46,139 +46,164 @@
         border: none;
         color: #8fa457; /* Set the desired color */
       }
-      .cards {
-    width: 100%;
-    display: flex;
-    display: -webkit-flex;
-    justify-content: center;
-    -webkit-justify-content: center;
-    max-width: 820px;
-}
-
-.card--1 .card__img, .card--1 .card__img--hover {
-    background-image: url('https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
-}
-
-.card--2 .card__img, .card--2 .card__img--hover {
-    background-image: url('https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
-}
-
-.card__like {
-    width: 18px;
-}
-
-.card__clock {
-    width: 15px;
-  vertical-align: middle;
-    fill: #AD7D52;
-}
-.card__time {
-    font-size: 12px;
-    color: #AD7D52;
-    vertical-align: middle;
-    margin-left: 5px;
-}
-
-.card__clock-info {
-    float: right;
-}
-
-.card__img {
-  visibility: hidden;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 235px;
-  border-top-left-radius: 12px;
-border-top-right-radius: 12px;
-  
-}
-
-.card__info-hover {
-    position: absolute;
-    padding: 16px;
+      .webinar-grid {
   width: 100%;
-  opacity: 0;
-  top: 0;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.card__img--hover {
-  transition: 0.2s all ease-out;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-  position: absolute;
-    height: 235px;
-  border-top-left-radius: 12px;
-border-top-right-radius: 12px;
-top: 0;
-  
-}
-.card {
-  margin-right: 25px;
-  transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
-  background-color: #fff;
-    width: 33.3%;
+.link-block {
   position: relative;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
-}
-.card:hover {
-  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
-    transform: scale(1.10, 1.10);
-}
-
-.card__info {
-z-index: 2;
-  background-color: #fff;
-  border-bottom-left-radius: 12px;
-border-bottom-right-radius: 12px;
-   padding: 16px 24px 24px 24px;
+  width: 30%;
+  min-height: 400px;
+  text-align: center;
+  margin: 20px auto;
+  background-color: #f0f0f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.2s cubic-bezier(.25, .8, .25, 1);
+  border-radius: 5px 5px 0 0;
+  text-decoration: none;
 }
 
-.card__category {
-    font-family: 'Raleway', sans-serif;
-    text-transform: uppercase;
-    font-size: 13px;
-    letter-spacing: 2px;
-    font-weight: 500;
-  color: #868686;
+.link-block:hover {
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.card__title {
-    margin-top: 5px;
-    margin-bottom: 10px;
-    font-family: 'Roboto Slab', serif;
+.link-block .dundas-blue-link {
+  background: rgba(40, 150, 211, 1);
+  border: solid 1px rgba(40, 150, 211, 1);
+  padding: 8px 25px;
+  color: #fff!important;
+  width: auto;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: all 0.8s cubic-bezier(.25, .8, .25, 1);
 }
 
-.card__by {
-    font-size: 12px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
+.link-block .dundas-blue-link:hover {
+  background: #fff;
+  color: rgba(40, 150, 211, 1)!important;
 }
 
-.card__author {
-    font-weight: 600;
-    text-decoration: none;
-    color: #AD7D52;
+.link-block .webinar-image-container {
+  width: 100%;
+  height: 150px;
+  position: relative;
+  top: 0;
+  transition: all 0.5s cubic-bezier(.25, .8, .25, 1);
+  z-index: 200;
 }
 
-.card:hover .card__img--hover {
-    height: 100%;
-    opacity: 0.3;
+.link-block:hover .webinar-image-container {
+  top: -20px;
 }
 
-.card:hover .card__info {
-    background-color: transparent;
+.link-block .dundas-blue-text-long {
+  position: absolute;
+  top: 140px;
+  transition: all 0.8s cubic-bezier(.25, .8, .25, 1);
+  background-color: #f0f0f0;
+  z-index: 100;
+  font-weight: 100;
+  color: rgba(40, 150, 211, .9);
+  font-size: 24px;
+  padding: 0 10px;
+  opacity: 1;
+}
+
+.link-block:hover .dundas-blue-text-long {
+  top: -20px;
+  opacity: 0;
+}
+
+.link-block h2 {
+  position: absolute;
+}
+
+.link-block .webinar-content-box {
+  position: relative;
+  padding: 20px;
+  top: -20px;
+  transition: all 0.5s cubic-bezier(.25, .8, .25, 1);
+  opacity: 0;
+}
+
+.link-block:hover .webinar-content-box {
+  top: -30px;
+  opacity: 1;
+}
+
+.webinar-content-box p {
+  padding: 0 0 20px 0;
+  color: #6a6a6a;
+}
+
+.webinar-content-box a {
+  text-decoration: none!important;
+}
+
+.webinar-image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}
+
+.archive {
+  display: none;
+}
+
+
+/* .webinar-content-box p {white-space: nowrap;overflow: hidden;text-overflow: ellipsis;} */
+
+
+/* TABLET PORTRAIT */
+
+@media only screen and (min-width: 569px) and (max-width: 880px) {
+  .link-block {
     position: relative;
+    width: 45%;
+    max-width: 330px;
+  }
+  .link-block .dundas-blue-text-long {
+    font-size: 22px;
+  }
 }
 
-.card:hover .card__info-hover {
-    opacity: 1;
+
+/* MOBILE LANDSCAPE */
+
+@media only screen and (min-width: 0) and (max-width: 568px) {
+  .link-block {
+    position: relative;
+    width: 90%;
+    max-width: 300px;
+  }
+  .link-block .dundas-blue-text-long {
+    font-size: 18px;
+  }
 }
+
+.videoWrapper {
+  height: auto;
+  width: 723px;
+  position: relative;
+  overflow: hidden;
+}
+
+.videoWrapper iframe {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+     
 
     </style>
     
@@ -240,79 +265,241 @@ border-bottom-right-radius: 12px;
 
     <!-- frame start from here --> 
     <div class="container">
-      <img src="img/" alt="Header Image" class="img-fluid" style="width: 1920px; height: auto;">
-      <h1>News content</h1>
+      <img src="img/News Header.png" alt="Header Image" class="img-fluid" style="width: 1920px; height: auto;">
+      <!-- <h1>News content</h1> -->
     </div>
     
     <!-- frame end from here --> 
 <!-- main start here -->
-<div class="container ">
-  <section class="row p-lg-5">
-    <article class="card card--1 col-12 col-lg-4">
-      <div class="card__info-hover">
-        <svg class="card__like"  viewBox="0 0 24 24">
-        <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
-    </svg>
-          <div class="card__clock-info">
-            <svg class="card__clock"  viewBox="0 0 24 24"><path d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M19.03,7.39L20.45,5.97C20,5.46 19.55,5 19.04,4.56L17.62,6C16.07,4.74 14.12,4 12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22C17,22 21,17.97 21,13C21,10.88 20.26,8.93 19.03,7.39M11,14H13V8H11M15,1H9V3H15V1Z" />
-            </svg><span class="card__time">15 min</span>
-          </div>
-        
+<div class="container pt-lg-5">
+  <div class="webinar-grid pt-lg-5">
+
+    <a href="/learning/webinars/18-12-2016-visualizing-r-advanced-analytics-results-in-dundas-bi" class="link-block">
+      <div class="jumbotron left-right-jumbotron-block">
+        <div class="webinar-image-container">
+          <img src="http://www.dundas.com/Content/uploads/Center6.jpg">
+        </div>
+        <h1 class="dundas-blue-text-long">
+       How Center6 Empowers their Customers with White Labeled Dundas BI Analytics - Webinars
+      </h1>
+  
+        <div class="webinar-content-box">
+          <p>We’ll show you how Dundas BI lets you use all of the existing data connections to inject data into R and then visualize and interact with the results in Dundas BI so more people get faster insights and make better decisions.</p>
+          <span class="dundas-blue-link">View webinar &gt;</span>
+        </div>
       </div>
-      <div class="card__img"></div>
-      <a href="#" class="card_link">
-         <div class="card__img--hover"></div>
-       </a>
-      <div class="card__info">
-        <span class="card__category"> Recipe</span>
-        <h3 class="card__title">Crisp Spanish tortilla Matzo brei</h3>
-        <span class="card__by">by <a href="#" class="card__author" title="author">Celeste Mills</a></span>
+    </a>
+    <a href="/learning/webinars/18-12-2016-visualizing-r-advanced-analytics-results-in-dundas-bi" class="link-block">
+      <div class="jumbotron left-right-jumbotron-block">
+        <div class="webinar-image-container">
+          <img src="http://www.dundas.com/Content/uploads/Visualizing_R_Webinar.png">
+        </div>
+        <h1 class="dundas-blue-text-long">
+        Visualizing R Advanced Analytics Results in Dundas BI
+      </h1>
+        <div class="webinar-content-box">
+          <p>We’ll show you how Dundas BI lets you use all of the existing data connections to inject data into R and then visualize and interact with the results in Dundas BI so more people get faster insights and make better decisions.</p>
+          <span class="dundas-blue-link">View webinar &gt;</span>
+        </div>
       </div>
-    </article>
-    <article class="card card--2 col-12 col-lg-4">
-      <div class="card__info-hover">
-        <svg class="card__like"  viewBox="0 0 24 24">
-        <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
-    </svg>
-          <div class="card__clock-info">
-            <svg class="card__clock"  viewBox="0 0 24 24"><path d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M19.03,7.39L20.45,5.97C20,5.46 19.55,5 19.04,4.56L17.62,6C16.07,4.74 14.12,4 12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22C17,22 21,17.97 21,13C21,10.88 20.26,8.93 19.03,7.39M11,14H13V8H11M15,1H9V3H15V1Z" />
-            </svg><span class="card__time">5 min</span>
-          </div>
-        
+    </a>
+    <a href="/learning/webinars/18-12-2016-visualizing-r-advanced-analytics-results-in-dundas-bi" class="link-block">
+      <div class="jumbotron left-right-jumbotron-block">
+        <div class="webinar-image-container">
+          <img src="http://www.dundas.com/Content/uploads/20_Tips.jpg">
+        </div>
+        <h1 class="dundas-blue-text-long">
+        Visualizing R Advanced Analytics Results in Dundas BI
+      </h1>
+        <div class="webinar-content-box">
+          <p>We’ll show you how Dundas BI lets you use all of the existing data connections to inject data into R and then visualize and interact with the results in Dundas BI so more people get faster insights and make better decisions.</p>
+          <span class="dundas-blue-link">View webinar &gt;</span>
+        </div>
       </div>
-      <div class="card__img"></div>
-      <a href="#" class="card_link">
-         <div class="card__img--hover"></div>
-       </a>
-      <div class="card__info">
-        <span class="card__category"> Travel</span>
-        <h3 class="card__title">Discover the sea</h3>
-        <span class="card__by">by <a href="#" class="card__author" title="author">John Doe</a></span>
+    </a>
+  
+    <a href="/learning/webinars/18-12-2016-visualizing-r-advanced-analytics-results-in-dundas-bi" class="link-block">
+      <div class="jumbotron left-right-jumbotron-block">
+        <div class="webinar-image-container">
+          <img src="http://www.dundas.com/Content/uploads/Winning-Dashboards-Webinar-600x233.png">
+        </div>
+        <h1 class="dundas-blue-text-long">
+        Visualizing R Advanced Analytics Results in Dundas BI
+      </h1>
+        <div class="webinar-content-box">
+          <p>We’ll show you how Dundas BI lets you use all of the existing data connections to inject data into R and then visualize and interact with the results in Dundas BI so more people get faster insights and make better decisions.</p>
+          <span class="dundas-blue-link">View webinar &gt;</span>
+        </div>
       </div>
-    </article>  
-    <!-- <article class="card card--1 col-12 col-lg-4">
-      <div class="card__info-hover">
-        <svg class="card__like"  viewBox="0 0 24 24">
-        <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
-    </svg>
-          <div class="card__clock-info">
-            <svg class="card__clock"  viewBox="0 0 24 24"><path d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M19.03,7.39L20.45,5.97C20,5.46 19.55,5 19.04,4.56L17.62,6C16.07,4.74 14.12,4 12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22C17,22 21,17.97 21,13C21,10.88 20.26,8.93 19.03,7.39M11,14H13V8H11M15,1H9V3H15V1Z" />
-            </svg><span class="card__time">5 min</span>
-          </div>
-        
+    </a>
+  
+    <a href="/learning/webinars/18-12-2016-visualizing-r-advanced-analytics-results-in-dundas-bi" class="link-block">
+      <div class="jumbotron left-right-jumbotron-block">
+        <div class="webinar-image-container">
+          <img src="http://www.dundas.com/Content/uploads/Steps-to-Success-with-Self-Service-Analytics-Webinar-600x233.png">
+        </div>
+        <h1 class="dundas-blue-text-long">
+        Visualizing R Advanced Analytics Results in Dundas BI
+      </h1>
+        <div class="webinar-content-box">
+          <p>We’ll show you how Dundas BI lets you use all of the existing data connections to inject data into R and then visualize and interact with the results in Dundas BI so more people get faster insights and make better decisions.</p>
+          <span class="dundas-blue-link">View webinar &gt;</span>
+        </div>
       </div>
-      <div class="card__img"></div>
-      <a href="#" class="card_link">
-         <div class="card__img--hover"></div>
-       </a>
-      <div class="card__info">
-        <span class="card__category"> Travel</span>
-        <h3 class="card__title">Discover the sea</h3>
-        <span class="card__by">by <a href="#" class="card__author" title="author">John Doe</a></span>
+    </a>
+  
+    <a href="/learning/webinars/18-12-2016-visualizing-r-advanced-analytics-results-in-dundas-bi" class="link-block">
+      <div class="jumbotron left-right-jumbotron-block">
+        <div class="webinar-image-container">
+          <img src="http://www.dundas.com/Content/uploads/Big-Data-Webinar-600x233.png">
+        </div>
+        <h1 class="dundas-blue-text-long">
+        Visualizing R Advanced Analytics Results in Dundas BI
+      </h1>
+        <div class="webinar-content-box">
+          <p>We’ll show you how Dundas BI lets you use all of the existing data connections to inject data into R and then visualize and interact with the results in Dundas BI so more people get faster insights and make better decisions.</p>
+          <span class="dundas-blue-link">View webinar &gt;</span>
+        </div>
       </div>
-    </article>   -->
- 
-      </section>
+    </a>
+  
+    <a href="/learning/webinars/18-12-2016-visualizing-r-advanced-analytics-results-in-dundas-bi" class="link-block">
+      <div class="jumbotron left-right-jumbotron-block">
+        <div class="webinar-image-container">
+          <img src="http://www.dundas.com/Content/uploads/v3-webinar-600x233.png">
+        </div>
+        <h1 class="dundas-blue-text-long">
+        Visualizing R Advanced Analytics Results in Dundas BI
+      </h1>
+        <div class="webinar-content-box">
+          <p>We’ll show you how Dundas BI lets you use all of the existing data connections to inject data into R and then visualize and interact with the results in Dundas BI so more people get faster insights and make better decisions.</p>
+          <span class="dundas-blue-link">View webinar &gt;</span>
+        </div>
+      </div>
+    </a>
+  
+    <a href="/learning/webinars/18-12-2016-visualizing-r-advanced-analytics-results-in-dundas-bi" class="link-block">
+      <div class="jumbotron left-right-jumbotron-block">
+        <div class="webinar-image-container">
+          <img src="http://www.dundas.com/Content/uploads/Visual-Analytics-Deliver-Key-Requirements-600X233.png">
+        </div>
+        <h1 class="dundas-blue-text-long">
+        Visualizing R Advanced Analytics Results in Dundas BI
+      </h1>
+        <div class="webinar-content-box">
+          <p>We’ll show you how Dundas BI lets you use all of the existing data connections to inject data into R and then visualize and interact with the results in Dundas BI so more people get faster insights and make better decisions.</p>
+          <span class="dundas-blue-link">View webinar &gt;</span>
+        </div>
+      </div>
+    </a>
+  
+    <a href="/learning/webinars/18-12-2016-visualizing-r-advanced-analytics-results-in-dundas-bi" class="link-block">
+      <div class="jumbotron left-right-jumbotron-block">
+        <div class="webinar-image-container">
+          <img src="http://www.dundas.com/Content/uploads/How-to-Build-a-Dashboard-600X233.png">
+        </div>
+        <h1 class="dundas-blue-text-long">
+        Visualizing R Advanced Analytics Results in Dundas BI
+      </h1>
+        <div class="webinar-content-box">
+          <p>We’ll show you how Dundas BI lets you use all of the existing data connections to inject data into R and then visualize and interact with the results in Dundas BI so more people get faster insights and make better decisions.</p>
+          <span class="dundas-blue-link">View webinar &gt;</span>
+        </div>
+      </div>
+    </a>
+  
+    <a href="/learning/webinars/18-12-2016-visualizing-r-advanced-analytics-results-in-dundas-bi" class="link-block">
+      <div class="jumbotron left-right-jumbotron-block">
+        <div class="webinar-image-container">
+          <img src="http://www.dundas.com/Content/uploads/Delivering-Secure-Self-Service-BI-600X233.png">
+        </div>
+        <h1 class="dundas-blue-text-long">
+        Visualizing R Advanced Analytics Results in Dundas BI
+      </h1>
+        <div class="webinar-content-box">
+          <p>We’ll show you how Dundas BI lets you use all of the existing data connections to inject data into R and then visualize and interact with the results in Dundas BI so more people get faster insights and make better decisions.</p>
+          <span class="dundas-blue-link">View webinar &gt;</span>
+        </div>
+      </div>
+    </a>
+  
+    <a href="/learning/webinars/18-12-2016-visualizing-r-advanced-analytics-results-in-dundas-bi" class="link-block">
+      <div class="jumbotron left-right-jumbotron-block">
+        <div class="webinar-image-container">
+          <img src="http://www.dundas.com/Content/uploads/Flexibility-Webinar-Banner-for-web.png">
+        </div>
+        <h1 class="dundas-blue-text-long">
+        Visualizing R Advanced Analytics Results in Dundas BI
+      </h1>
+        <div class="webinar-content-box">
+          <p>We’ll show you how Dundas BI lets you use all of the existing data connections to inject data into R and then visualize and interact with the results in Dundas BI so more people get faster insights and make better decisions.</p>
+          <span class="dundas-blue-link">View webinar &gt;</span>
+        </div>
+      </div>
+    </a>
+  
+    <a href="/learning/webinars/18-12-2016-visualizing-r-advanced-analytics-results-in-dundas-bi" class="link-block">
+      <div class="jumbotron left-right-jumbotron-block">
+        <div class="webinar-image-container archive">
+  
+        </div>
+        <h1 class="dundas-blue-text-long">
+        Visualizing R Advanced Analytics Results in Dundas BI
+      </h1>
+        <div class="webinar-content-box">
+          <p>We’ll show you how Dundas BI lets you use all of the existing data connections to inject data into R and then visualize and interact with the results in Dundas BI so more people get faster insights and make better decisions.</p>
+          <span class="dundas-blue-link">View webinar &gt;</span>
+        </div>
+      </div>
+    </a>
+  
+    <a href="/learning/webinars/18-12-2016-visualizing-r-advanced-analytics-results-in-dundas-bi" class="link-block">
+      <div class="jumbotron left-right-jumbotron-block">
+        <div class="webinar-image-container archive">
+  
+        </div>
+        <h1 class="dundas-blue-text-long">
+        Visualizing R Advanced Analytics Results in Dundas BI
+      </h1>
+        <div class="webinar-content-box">
+          <p>We’ll show you how Dundas BI lets you use all of the existing data connections to inject data into R and then visualize and interact with the results in Dundas BI so more people get faster insights and make better decisions.</p>
+          <span class="dundas-blue-link">View webinar &gt;</span>
+        </div>
+      </div>
+    </a>
+  
+    <a href="/learning/webinars/18-12-2016-visualizing-r-advanced-analytics-results-in-dundas-bi" class="link-block">
+      <div class="jumbotron left-right-jumbotron-block">
+        <div class="webinar-image-container archive">
+  
+        </div>
+        <h1 class="dundas-blue-text-long">
+        Visualizing R Advanced Analytics Results in Dundas BI
+      </h1>
+        <div class="webinar-content-box">
+          <p>We’ll show you how Dundas BI lets you use all of the existing data connections to inject data into R and then visualize and interact with the results in Dundas BI so more people get faster insights and make better decisions.</p>
+          <span class="dundas-blue-link">View webinar &gt;</span>
+        </div>
+      </div>
+    </a>
+  
+    <a href="/learning/webinars/18-12-2016-visualizing-r-advanced-analytics-results-in-dundas-bi" class="link-block">
+      <div class="jumbotron left-right-jumbotron-block">
+        <div class="webinar-image-container archive">
+  
+        </div>
+        <h1 class="dundas-blue-text-long">
+        Visualizing R Advanced Analytics Results in Dundas BI
+      </h1>
+        <div class="webinar-content-box">
+          <p>We’ll show you how Dundas BI lets you use all of the existing data connections to inject data into R and then visualize and interact with the results in Dundas BI so more people get faster insights and make better decisions.</p>
+          <span class="dundas-blue-link">View webinar &gt;</span>
+        </div>
+      </div>
+    </a>
+  
+  
+  </div>
 </div>
 <!-- main end here -->
 
