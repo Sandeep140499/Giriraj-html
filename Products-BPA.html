@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> Giriraj Foils </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/fav.jpg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+
+    
+    <style>
+      .navbar-toggler-icon {
+        background-image: none;
+        border: none;
+        color: #8fa457; /* Set the desired color */
+      }
+      .dropdown-menu{
+        background-color: white !important;
+      
+      }
+      .dropdown-item{
+        color: #8fa457 !important;
+      }
+      .centered {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  /* transform: translate(-50%, -50%); */
+  font-size: 1rem;
+  line-height: 1.2;
+  font-weight: 700 !important;
+  color: #000;
+}
+
+    </style>
+    
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top" style="background-color:#FFFFFF">
+        <div class="container" style="background-color:#FFFFFF">
+          <nav class="navbar navbar-expand-lg navbar-dark p-0" style="background-color:#FFFFFF">
+            <a href="index.html" class="navbar-brand">
+                <img class="logoimg"  src="img/gglogo.png" alt="">
+              <!-- <h1 class="text-white">
+                Giriraj<span class="text-dark"> </span>Foils
+              </h1> -->
+            </a>
+            <button
+              type="button"
+              class="navbar-toggler ms-auto me-0"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarCollapse"
+            >
+            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <div class="navbar-nav ms-auto">
+                <a href="index.html" class="nav-item nav-link active" style="color:#8fa457">Home</a>
+                <a href="about-us.html" class="nav-item nav-link" style="color:#8fa457">About Us</a>
+                <a href="solutions.html" class="nav-item nav-link" style="color:#8fa457">Solutions</a>
+           </a>
+              <li class="nav-item dropdown">
+                <a class="nav-item nav-link" style="color:#8fa457" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Product
+                </a>
+                <a href="Accreditations.html" class="nav-item nav-link" style="color:#8fa457">Accreditations</a>
+               
+                <a href="contact-us.html" class="nav-item nav-link" style="color:#8fa457">Contact Us</a>
+                <!-- <a href="admin.php" class="nav-item nav-link" style="color:#8fa457">Login </a> -->
+              </div>
+              <!-- <butaton
+                type="button"
+                class="btn text-white p-0 d-none d-lg-block"
+                data-bs-toggle="modal"
+                data-bs-target="#searchModal"
+                style="color:#8fa457" ><i class="fa fa-search"></i
+              ></butaton> -->
+            </div>
+          </nav>
+        </div>
+      </div>
+    <!-- Navbar End -->
+
+
+      
+    <div class="container">
+        <img src="img/Banners/Products.png" alt="Header Image" class="img-fluid" style="width: 1920px; height: auto;">
+        <!-- <div class="centered text-center">
+          <b>Creating and protecting the value of trust for the last three decades. </b>
+         </div> -->
+      </div>
+      
+
+    <!-- Hero Start -->
+    <!-- <div class="container-fluid pt-5 bg-primary hero-header">
+        <div class="container pt-5">
+            <div class="row g-5 pt-5">
+                
+                <div class="col-lg-6 align-self-end text-center text-lg-end">
+                    <img class="img-fluid" src="img/aboutheader.png" alt="" style="max-height: 300px;">
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Hero End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(20, 24, 62, 0.7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn btn-square bg-white btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-light p-3"
+                            placeholder="Type search keyword">
+                        <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+  
+    <!-- About Start -->
+   
+    <div class="container-fluid">
+      
+        <div class="container">
+          
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+              <!-- <div class="about-img">
+                <img class="img-fluid" src="img/aboutus/about-us-side.jpeg" />
+                <h6 class="text-center p-lg-3">Shobhit Arora, Managing Director & Deepak Gopal, Director, GFPL</h6>
+              </div> -->
+              
+            </div>
+            <div class="container-fluid bg-light" >
+              <p style="font-size: 30px;">
+                GFPL offers a broad range of base (films/foils) for various Brand Protection and Flexible Packaging Applications. We offer metallic and non-metallic foils in Silver, Golden, Copper and Transparent (HRI) variants for the Authentication industry. The same are available in 16, 19 & 23 microns thickness with a variety of combinations in the width and features. Our approach towards customised solutions is always an added advantage. 
+                </p>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-lg-3 ">
+                  <div class="card" style="width: 18rem;">
+                    <img src="/img/429A0292.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Hot Stamping Foils </h5>
+                      <p class="card-text"><b>Application:</b> Brand Protection </p>
+                      <p class="card-text"><b>Color: </b>Silver, Golden & Various others Colors</p>
+                      <a href="#" class="btn btn-primary">Enquiry</a>
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+            <!-- <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+              <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3" style="background-color:rgb(143, 164, 87, .5); color: white; ">
+                About Us
+              </div>
+            <h1 class="mb-4">
+                  We do this by creating and protecting value of trust. With state of the manufacturing facility
+              </h1> -->
+              <!-- <p class="mb-4">
+                Founded in 1993, Giriraj Foils Pvt Ltd (GFPL) offers a comprehensive portfolio of very high-security films, stamping foils and laminates used by Authentication, Security Printing, Packaging, Healthcare and Decorative Industries for Brand, Revenue and Consumer Protection applications. 
+
+Our 200+ professional combined experience, craft, innovation and ambition has earned us an irreproachable reputation defining the contours of the 'High-Security Films / Foils Industry' in India and globally.
+
+For the last 30 (thirty) years, our ethics, commitment and business values have led us to maintain leadership as a critical supplier providing the high-security film market to the industry in the Indian arena. 
+
+              </p> -->
+              <!-- <p class="mb-4">
+                Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et
+                sit, sed stet no labore lorem sit. Sanctus clita duo justo et
+                tempor.
+              </p> -->
+  
+  <!-- 
+              <div class="row g-3">
+                <div class="col-sm-3">
+                    <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>- Films / Foils for High Security Application</h6>
+                </div>
+                <div class="col-sm-3">
+                    <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>- Films / Foils for Brand Protection & Labeling</h6>
+                </div>
+                <div class="col-sm-3">
+                    <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>- Flexible Laminates for Healthcare Packaging</h6>
+                </div>
+                <div class="col-sm-3">
+                    <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>- Films for Interior Architectural</h6>
+                </div>
+            </div> -->
+            
+  
+  
+  
+  
+  
+             
+              <!-- </div> --> 
+              <div class="row g-3">
+       
+              
+            </div>
+  
+  
+
+                <!-- links start from here -->
+
+<div class="container  p-3">
+  <h5 class="">Click, to know more about our others products range of </h5>
+<div class="row pt-lg-3">
+  <div class="col-12 col-lg-12">
+<h4><a href="http://" style="color: black;"><b>High Security Applications</b></a></h4>
+  </div>
+  <div class="col-12 col-lg-12">
+<h4>    <a href="http://" style="color: black;"><b>Interior Architectural Solutions</b></a></h4>
+  </div>
+  <div class="col-12 col-lg-12">
+ <h4> <a href="http://" style="color: black;" ><b>		Healthcare Packaging Solutions</b></a></h4>
+  </div>
+
+</div>
+</div>
+
+<!-- links end from here -->
+
+  
+  
+              <!-- <div class="d-flex align-items-center mt-4">
+                <a class="btn btn-primary rounded-pill px-4 me-3 ms-auto" href="about-us.html"
+                style="background-color:rgb(143, 164, 87, .5); color: white;">Read More</a>
+            </div> -->
+            
+  
+  
+  
+              <!-- <div class="d-flex align-items-center mt-4">
+                <a class="btn btn-primary rounded-pill px-4 me-3" href="about-us.html"
+                style="background-color:rgb(143, 164, 87, .5); color: white; " >Read More</a
+                > -->
+  
+  
+                <!-- <a class="btn btn-outline-primary btn-square me-3" href=""
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a class="btn btn-outline-primary btn-square me-3" href=""
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a class="btn btn-outline-primary btn-square me-3" href=""
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a class="btn btn-outline-primary btn-square" href=""
+                  ><i class="fab fa-linkedin-in"></i
+                ></a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <!-- About End -->
+
+
+    
+
+
+    
+ <!-- Footer Start -->
+
+ <div class="container-fluid bg-dark text-white-50 footer pt-5">
+    <div class="container py-5">
+      <div class="row g-5">
+        
+        <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+          <img src="img/footericon.png" alt="Logo" class="logo-img" style="max-width: 150px; height: auto;">
+          <a href="index.html" class="d-inline-block mb-3">
+            <!-- <img src="img/footericon.png" alt="Logo" class="logo-img" style="max-width: 150px; height: auto;"> -->
+            <h1 class="text-white">
+              Giriraj<span class="text-primary"> </span>Foils
+            </h1>
+          </a>
+          <p class="mb-0">Founded in 1993, Giriraj Foils Pvt Ltd (GFPL) offers a comprehensive portfolio from very high security films, stamping foils, and laminates which are used by Authentication, Packaging, Healthcare, and Decorative Industry</p>
+        </div>
+
+        <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+          <h5 class="text-white mb-4">Get In Touch</h5>
+          <p>
+            <i class="fa fa-map-marker-alt me-3"></i>Giriraj Foils Pvt. Ltd.
+            Udyog Nagar, Mathura Road, Vrindaban - 281121 (U.P.) India
+            
+          </p>
+          <!-- <p><i class="fa fa-phone-alt me-3"></i>+91 565 2443822, 2442276, 6534422
+          </p> -->
+          <p><i class="fa fa-envelope me-3"></i>ashish@girirajfoils.com</p>
+          <div class="d-flex pt-2">
+            <a class="btn btn-outline-light btn-social" href=""
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a class="btn btn-outline-light btn-social" href=""
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a class="btn btn-outline-light btn-social" href=""
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a class="btn btn-outline-light btn-social" href=""
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a class="btn btn-outline-light btn-social" href=""
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+          <h5 class="text-white mb-4">Popular Link</h5>
+          <a class="btn btn-link" href="about-us.html">About Us</a>
+          <a class="btn btn-link" href="contact-us.html">Contact Us</a>
+          <a class="btn btn-link" href="gallery.php">Product</a>
+          <a class="btn btn-link" href="solutions.html">Solutions</a>
+          <a class="btn btn-link" href="Accreditations.html">Accreditations</a>
+          <a class="btn btn-link" href="gallery.html">Gallery</a>
+          <a class="btn btn-link" href="news.html">News</a>
+        </div>
+        <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+          <h5 class="text-white mb-4">Our Services</h5>
+          <a class="btn btn-link" href="solutions.html"
+            >Films / Foils for High Security Application
+          </a>
+          <a class="btn btn-link" href="solutions.html"
+            >Films / Foils for Brand Protection & Labeling</a
+          >
+          <a class="btn btn-link" href="solutions.html"
+            >Flexible Laminates for Healthcare Packaging
+          </a>
+          <a class="btn btn-link" href="">Films for Interior Architectural</a>
+          <!-- <a class="btn btn-link" href="">Robot Technology</a> -->
+        </div>
+      </div>
+    </div>
+    <div class="container wow fadeIn" data-wow-delay="0.1s">
+      <div class="copyright">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            &copy; <a class="border-bottom" href="#">Giriraj Foils</a>, All
+            Right Reserved.
+
+           
+            <a class="border-bottom" href="https://quazze.com"></a>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <div class="footer-menu">
+              <a href="index.html">Home</a>
+              <a href="about-us.html">About us</a>
+              <!-- <a href="n">News</a> -->
+              <a href="privacy.html">Privacy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"
+    ><i class="bi bi-arrow-up"></i
+  ></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

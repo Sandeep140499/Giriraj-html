@@ -51,6 +51,174 @@
         border: none;
         color: #8fa457; /* Set the desired color */
       }
+      .dropdown-menu{
+        background-color: white !important;
+      
+      }
+      .dropdown-item{
+        color: #8fa457 !important;
+      }
+
+      .snip1563 {
+  background-color: #fff;
+  color: #ffffff !important;
+  display: inline-block;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  margin: 10px 5px;
+  max-width: 315px;
+  min-width: 230px;
+  overflow: hidden;
+  position: relative;
+  text-align: right;
+  width: 100%;
+}
+
+.snip1563 *,
+.snip1563 *:before,
+.snip1563 *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.snip1563 img {
+  backface-visibility: hidden;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.snip1563:before,
+.snip1563:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  background-color: #8fa457 ;
+  opacity: 0.5;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.snip1563:before {
+  -webkit-transform: skew(30deg) translateX(80%);
+  transform: skew(30deg) translateX(80%);
+}
+
+.snip1563:after {
+  -webkit-transform: skew(-30deg) translateX(70%);
+  transform: skew(-30deg) translateX(70%);
+}
+
+.snip1563 figcaption {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+  bottom: 0;
+  padding: 20px 20px 20px 40%;
+}
+
+.snip1563 figcaption:before,
+.snip1563 figcaption:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #8fa457 ;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  content: '';
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.snip1563 figcaption:before {
+  -webkit-transform: skew(30deg) translateX(100%);
+  transform: skew(30deg) translateX(100%);
+}
+
+.snip1563 figcaption:after {
+  -webkit-transform: skew(-30deg) translateX(90%);
+  transform: skew(-30deg) translateX(90%);
+}
+
+.snip1563 h3,
+.snip1563 p {
+  margin: 0;
+  opacity: 0;
+  letter-spacing: 1px;
+}
+
+.snip1563 h3 {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.snip1563 p {
+  font-size: 0.9em;
+}
+
+.snip1563 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.snip1563:hover h3,
+.snip1563.hover h3,
+.snip1563:hover p,
+.snip1563.hover p {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 0.9;
+}
+
+.snip1563:hover:before,
+.snip1563.hover:before {
+  -webkit-transform: skew(30deg) translateX(30%);
+  transform: skew(30deg) translateX(30%);
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+
+.snip1563:hover:after,
+.snip1563.hover:after {
+  -webkit-transform: skew(-30deg) translateX(20%);
+  transform: skew(-30deg) translateX(20%);
+}
+
+.snip1563:hover figcaption:before,
+.snip1563.hover figcaption:before {
+  -webkit-transform: skew(30deg) translateX(50%);
+  transform: skew(30deg) translateX(50%);
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+.snip1563:hover figcaption:after,
+.snip1563.hover figcaption:after {
+  -webkit-transform: skew(-30deg) translateX(40%);
+  transform: skew(-30deg) translateX(40%);
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+
+/* Demo purposes only */
+      
+      
     </style>
     
 
@@ -98,7 +266,23 @@
               <a href="index.html" class="nav-item nav-link active" style="color:#8fa457">Home</a>
               <a href="about-us.html" class="nav-item nav-link" style="color:#8fa457">About Us</a>
               <a href="solutions.html" class="nav-item nav-link" style="color:#8fa457">Solutions</a>
-              <a href="product.html" class="nav-item nav-link" style="color:#8fa457">Product</a>
+              <a href="#" >
+              </a>
+              <li class="nav-item dropdown">
+                <a class="nav-item nav-link" style="color:#8fa457" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Product
+                </a>
+                <ul class="dropdown-menu"  style="color:#8fa457"  >
+                  <!-- <li><hr class="dropdown-divider"></li> -->
+                  <li><a class="dropdown-item" href="/Products-BPA.html">Brand Protection & Labeling (BPL)</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="/Products-HSA.html">Healthcare Solutions (HPS)</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="/Products-IAS.html">Interior Architectural Solutions (IAS)</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="/Products-HP.html">High Sec</a></li>
+                </ul>
+              </li>
               <a href="Accreditations.html" class="nav-item nav-link" style="color:#8fa457">Accreditations</a>
              
               <a href="contact-us.html" class="nav-item nav-link" style="color:#8fa457">Contact Us</a>
@@ -132,13 +316,13 @@
               sit
             </p> -->
             <a
-              href="about.html"
+              href="/about-us.html"
               class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInRight"
-              style="background-color:rgb(143, 164, 87, .5); color: white; "    >About Us</a
+              style="background-color:rgb(143, 164, 87, .5); color: white; ">About Us</a
             
             >
             <a
-              href="contact.html"
+              href="/contact-us.html"
               class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight"
               >Contact Us</a
             >
@@ -196,7 +380,7 @@
         <div class="row g-5 align-items-center">
           <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
             <div class="about-img">
-              <img class="img-fluid" src="img/About Us Image GFPL.jpg" />
+              <img class="img-fluid" src="img/aboutus/about-us-side.jpeg" />
             </div>
           </div>
           <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
@@ -207,7 +391,10 @@
                 We do this by creating and protecting value of trust. With state of the manufacturing facility
             </h1> -->
             <p class="mb-4">
-                Founded in 1993, Giriraj Foils Pvt Ltd (GFPL) offers a comprehensive portfolio from very high security films, stamping foils and laminates which are used by Authentication, Packaging, Healthcare and Decorative Industry. 
+              Founded in 1993, Giriraj Foils Pvt Ltd (GFPL) offers a comprehensive portfolio of very high-security films, stamping foils and laminates used by Authentication, Security Printing, Packaging, Healthcare and Decorative Industries for Brand, Revenue and Consumer Protection applications. 
+Our 200+ professional combined experience, craft, innovation and ambition has earned GFPL an irreproachable reputation defining the contours of the ‘High-Security Films / Foils Industry’ in India and globally.
+For the last 30 years, our ethics, commitment and business values have led us to maintain leadership as a critical supplier providing the high-security film market to the industry in the Indian arena
+
             </p>
             <!-- <p class="mb-4">
               Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et
@@ -236,7 +423,7 @@
 
 
 
-            <div class="row g-3">
+            <!-- <div class="row g-3">
                 <div class="col-sm-6">
                     <h6 class="mb-3"   ><i class="fa fa-check text-primary me-2"  ></i>	Films / Foils for High Security Application  </h6>
 
@@ -247,12 +434,10 @@
                     <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>	Films for Interior Architectural</h6>
                 </div>
             </div>
-            </div>
+            </div> -->
 
 
-            <div class="d-flex align-items-center justify-content-center mt-4">
-              <a class="btn btn-primary rounded-pill px-4 me-3" href="about-us.html" style="background-color:rgb(143, 164, 87, .5); color: white; margin-left: 180px;">Read More</a>
-          </div>
+         
           
 
 
@@ -287,6 +472,9 @@
         </div>
       </div>
     </div>
+    <div class=" col-12 col-lg-12 text-center mt-4">
+      <a class="btn btn-primary rounded-pill px-4 me-3" href="about-us.html" style="background-color:rgb(143, 164, 87, .5); color: white;">Read More</a>
+  </div>
     <!-- About End -->
 
     <!-- Service Start -->
@@ -314,7 +502,7 @@
       </div>
     </div>
 
-    <div class="container mt-5 mb-5">
+    <!-- <div class="container mt-5 mb-5">
       <div class="row">
         <div class="col-12 col-md-6 col-lg-3 mb-4">
           <div class="service-item d-flex flex-column justify-content-center text-center rounded">
@@ -366,7 +554,59 @@
           </div>
         </div>
       </div>
+    </div> -->
+
+    <!-- 4 cards start here sandeep code -->
+    <div class="gx-5  p-lg-5 p-3">
+     <div class="row gx-5 p-lg-2 p-2">
+      <div class="col-12 col-lg-3 border">
+        <figure class="snip1563">
+          <img src="/img/home/1.jpg" alt="sample110" />
+          <figcaption>
+            <h3>High-Security Applications (HSA)</h3>
+            <!-- <p>The only skills I have the patience to learn are those that have no real application in life.</p> -->
+          </figcaption>
+          <a href="/solutions.html"></a>
+        </figure>
+
+      </div>
+      <div class="col-12 col-lg-3 border">
+        <figure class="snip1563">
+          <img src="/img/home/2.jpg" alt="sample110" />
+          <figcaption>
+            <h3>Brand Protection & Labelling (BPL)</h3>
+            <!-- <p>The only skills I have the patience to learn are those that have no real application in life.</p> -->
+          </figcaption>
+          <a href="/solutions.html"></a>
+        </figure>
+
+      </div>
+      <div class="col-12 col-lg-3 border">
+        <figure class="snip1563">
+          <img src="/img/home/3.jpg" alt="sample110" />
+          <figcaption>
+            <h3>Healthcare Packaging (HP)</h3>
+            <!-- <p>The only skills I have the patience to learn are those that have no real application in life.</p> -->
+          </figcaption>
+          <a href="/solutions.html"></a>
+        </figure>
+
+      </div>
+      <div class="col-12 col-lg-3 border">
+        <figure class="snip1563">
+          <img src="/img/home/4.jpg" alt="sample110" />
+          <figcaption>
+            <h3>Interior Architectural Solutions (IAS)</h3>
+            <!-- <p>The only skills I have the patience to learn are those that have no real application in life.</p> -->
+          </figcaption>
+          <a href="/solutions.html"></a>
+        </figure>
+
+      </div>
+
     </div>
+    </div>
+    <!-- 4 cards end here sandeep code -->
     
     
 
@@ -400,13 +640,16 @@
             <div class="btn btn-sm border rounded-pill text-white px-3 mb-3" style="background-color:rgb(143, 164, 87, .5); color: white; ">
               Why Choose Us
             </div>
-            <h1 class="text-white mb-4">
-              We're specialist in manufacturing of coated foils and premium grade films for holograms with 20+ Years of Experience.
-            </h1>
-            <p class="text-light mb-4">
-              GFPL was awarded ISO 9001:2008 certification from TUV Rheinland for Operations & CRISIL has given its top ranking of 1 B to the Company’s Financial strength
-            </p>
-            <!-- Remaining content -->
+            <div class="row g-3">
+              <div class="col-lg-12 col-12 ">
+                  <h4 class="mb-3"  style="color: #FFFFFF;" ><i class="fa fa-check text-primary me-2  "  ></i>		Ethics, Trust, and Quality Commitment  </h4>
+                  <h4 class="mb-3"  style="color: #FFFFFF;" ><i class="fa fa-check text-primary me-2" ></i>	Experience of 30 Years  </h4>
+                  <h4 class="mb-3"   style="color: #FFFFFF;"><i class="fa fa-check text-primary me-2"  ></i>	State of the Art, Machinery, Technologies & Sustainability  </h4>
+              </div>
+              <div class="text-center mt-4">
+                <a class="btn btn-primary rounded-pill px-4 me-3" href="/Accreditations.html" style="background-color:rgb(143, 164, 87, .5); color: white;  ">Know More</a>
+            </div>
+              </div>
           </div>
           
           <div class="col-lg-6 align-self-end text-center text-md-end wow fadeIn mb-5" data-wow-delay="0.5s" >

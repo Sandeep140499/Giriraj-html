@@ -37,11 +37,35 @@
 
     
     <style>
+      @media screen and (min-width: 70rem) {
+  :root {
+    --indent: clamp(1.5rem, 4vw, 2.5rem);
+  }
+}
       .navbar-toggler-icon {
         background-image: none;
         border: none;
         color: #8fa457; /* Set the desired color */
       }
+      .dropdown-menu{
+        background-color: white !important;
+      
+      }
+      .dropdown-item{
+        color: #8fa457 !important;
+      }
+      .centered {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.6rem;
+  line-height: 1.2;
+  font-weight: 700 !important;
+  color: #000;
+}
+
+
     </style>
     
 </head>
@@ -80,7 +104,11 @@
                 <a href="index.html" class="nav-item nav-link active" style="color:#8fa457">Home</a>
                 <a href="about-us.html" class="nav-item nav-link" style="color:#8fa457">About Us</a>
                 <a href="solutions.html" class="nav-item nav-link" style="color:#8fa457">Solutions</a>
-                <a href="product.html" class="nav-item nav-link" style="color:#8fa457">Product</a>
+           </a>
+              <li class="nav-item dropdown">
+                <a class="nav-item nav-link" style="color:#8fa457" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Product
+                </a>
                 <a href="Accreditations.html" class="nav-item nav-link" style="color:#8fa457">Accreditations</a>
                
                 <a href="contact-us.html" class="nav-item nav-link" style="color:#8fa457">Contact Us</a>
@@ -100,8 +128,11 @@
     <!-- Navbar End -->
 
 
-    <div class="container">
-      <img src="img/Soution Header image.png" alt="Header Image" class="img-fluid" style="width: 1920px; height: auto; ">
+    <div class="container " style="background-color:#FFFFFF">
+      <img src="img/Banners/Solutions.png" alt="Header Image" class="img-fluid" style="width: 1920px; height: auto; ">
+      <!-- <div class="centered text-center">
+       <b> Our Excellent Solutions for Your <br/> Business</b>
+      </div> -->
     </div>
 
     <!-- Full Screen Search Start -->
@@ -128,21 +159,21 @@
     <!-- Service Start -->
     
       
-    <div class="container-fluid bg-light mt-5 py-5">
+    <div class="container-fluid bg-light mt-5 py-2">
       <div class="container py-5">
         <div class="row align-items-center justify-content-center">
-          <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+          <div class="col-lg-12 col-l2 wow fadeIn" data-wow-delay="0.1s">
             <div class="text-center mb-3">
-              <div class="btn btn-sm border rounded-pill text-primary px-3" style="background-color:rgb(143, 164, 87, .5); color: white; display: inline-block; margin-top: 35px;">
+              <!-- <div class="btn btn-sm border rounded-pill text-primary px-3" style="background-color:rgb(143, 164, 87, .5); color: white; display: inline-block; margin-top: 35px;">
                 Our Solutions
-              </div>
+              </div> -->
             </div>
-              <h1 class="mb-4 text-center">Our Excellent Solutions for Your Business</h1> 
+              <!-- <h1 class="mb-4 text-center">Our Excellent Solutions for Your Business</h1>  -->
 
               <!-- <h1 class="mb-4 text-center" style="white-space: nowrap;" >Our Excellent Solutions for Your Business</h1> -->
 
-            <p class="mb-4 text-center">
-              From high security product applications tax stamps, IDs, High Security Registration Plate to decorative packaging, Security Printers, Authentication Companies, Security Label Manufacturers, Convertors and Packaging Companies rely on us for our wide range of films, foils and laminate solutions.
+            <p class="mb-4 text-center pt-lg-5 pt-3" style="font-size: 30px;">
+              From very high-security tamper evident films for tax stamps, security laminates for Document Protection, Security Films for High-Security Registration Plate, and product for decorative packaging to our other customised solutions, leading Security Printers, Authentication Companies, Security Label Manufacturers, Convertors, Packaging and Decorative Product Manufacturers Companies rely on us for our wide range of films, foils and laminate solutions.
             </p>
           </div>
         </div>
@@ -162,9 +193,138 @@
 
 
 
+<div class="container p-lg-2">
+  <div class="row pt-lg-5">
+    <div class="col-12 col-lg-12 border p-lg-2">
+      <div class="row ">
+       <div class="col-12 col-lg-4">
+         <img src="/img/Solutions/HSA.jpg" class="img-fluid" alt="...">
+       </div>
+       <div class="col-12 col-lg-6 pb-3" >
+         <h3>High-Security Applications (HSA)</h3>
+           <div>
+             <ol type="1">
+               <li><b> Security Films for Tax Stamps </b></li>
+               <li><b>HRI Films for Document Protection (Passport) </b></li>
+               <li><b>Security Laminate for ID Cards </b></li>
+               <li><b>Security Foils for High Security Registration Plate (HSRP) </b></li>
+                <li><b>Chrome Metallized Films for Automotive </b></li>
+               </ol>
+           </div> 
+           <div class=" col-12 col-lg-12 text-center mt-4">
+             <a class="btn btn-primary rounded-pill px-4 me-3" href="product.html" style="background-color:rgb(143, 164, 87, .5); color: white;">Know more</a>
+         </div>
+ 
+       </div>
+      </div>
+     </div>
+     <div class="col-12 col-lg-12 border p-lg-2">
+       <div class="row ">
+         <div class="col-12 col-lg-4">
+           <img src="/img/Solutions/BPA.jpeg" class="img-fluid" alt="...">
+         </div>
+         <div class="col-12 col-lg-2"></div>
+         <div class="col-12 col-lg-6 pb-3" >
+           <h3>Brand Protection & Labelling (BPL)</h3>
+           <div>
+             <ol type="1">
+               <li><b>Hot Stamping Foils (HSF) </b></li>
+               <ol type="1">
+                 <li>Silver, Golden & Various Color Foils </li>
+                 <li>Pigmented Foils </li>
+                 <!-- <li></li> -->
+               </ol>
+               <li><b>Cold Stamping Foils (CSF) </b></li>
+               <ol type="1">
+                 <li>  Embossed and Non-Embossed CSF </li>
+                 <!-- <li></li> -->
+               </ol>
+               <li><b>Tamper and Non Tamper Evident Films (TEF) </b></li>
+               <ol type="1">
+                 <li>TEF for Hologram</li>
+                 <li>  VOID, Honey Comb, Checker Box TEF</li>
+                 <li>  Semi-Transparent TEF </li>
+                 <li> Customised with Security Features TEF </li>
+                 <li> UV and Non-UV TEF</li>
+                 <li>  Multi-Colour TEF
+                   </li>
+                 
+               </ol>
+               <li><b> Films for Labeling </b></li>
+               <ol type="1">
+                 <li>  Plain and Customised Pigmented Films 
+               
+                   </li>
+                 <li>      Plain and Text Metallized Films
+                   </li>
+                 <li> Plain Matt Metallized Films 
+                  </li>
+                 <li> Holographic Metallized Paper & Board</li>
+               </ol>
+ 
+           </div>
+           <div class=" col-12 col-lg-12 text-center mt-4">
+             <a class="btn btn-primary rounded-pill px-4 me-3" href="product.html" style="background-color:rgb(143, 164, 87, .5); color: white;">Know more</a>
+         </div>
+ 
+         </div>
+       </div>
+       </div>
+       <div class="col-12 col-lg-12 border p-lg-2">
+       <div class="row">
+         <div class="col-12 col-lg-4">
+           <img src="/img/Solutions/HP.CR2" class="img-fluid" alt="...">
+         </div>
+         <div class="col-12 col-lg-2"></div>
+         <div class="col-12 col-lg-6 pb-3" >
+           <h3>Healthcare Packaging (HP)</h3>
+           <div>
+             <ol type="1">
+               <li><b> - Flexible Laminates for Bags </b></li>
+               <ol type="1">
+                 <li>o 2/3 Layer Laminates for Disposable Medical Devices </li>
+               </ol>
+             </ol>
+   
+           </div>
+           <div class=" col-12 col-lg-12 text-center mt-4">
+             <a class="btn btn-primary rounded-pill px-4 me-3" href="product.html" style="background-color:rgb(143, 164, 87, .5); color: white;">Know more</a>
+         </div>
+   
+         </div>
+       </div>
+     </div>
+     <div class="col-12 col-lg-12 border p-lg-2">
+      <div class="row">
+       <div class="col-12 col-lg-4">
+         <img src="/img/Solutions/IAS.jpeg" class="img-fluid" alt="...">
+       </div>
+       <div class="col-12 col-lg-2"></div>
+       <div class="col-12 col-lg-6 pb-3" >
+         <h3>Interior Architectural Solutions (IAS)</h3>
+         <div>
+           <ol type="1">
+             <li><b> Decorative films for Interior Application  </b></li>
+             <li><b>Profiles for Photo Frames </b></li>
+             <ol type="1">
+               <li>  Pigmented Foils for Profiles </li>
+             </ol>
+           </ol>
+           <div class=" col-12 col-lg-12 text-center mt-4">
+             <a class="btn btn-primary rounded-pill px-4 me-3" href="product.html" style="background-color:rgb(143, 164, 87, .5); color: white;">Know more</a>
+         </div>
+ 
+         </div>
+       </div>
+      </div>
+     </div>
+
+  </div>
+</div>
 
 
-    <div class="container mt-5 mb-5">
+
+    <!-- <div class="container mt-5 mb-5">
       <div class="row">
         <div class="col-12 col-md-6 col-lg-3 mb-4">
           <div class="service-item d-flex flex-column justify-content-center text-center rounded">
@@ -216,7 +376,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     
     
 
